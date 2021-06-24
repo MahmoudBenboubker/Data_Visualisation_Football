@@ -1,12 +1,23 @@
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 import plotly.graph_objects as go
+import altair as alt
+
+import warnings
+warnings.filterwarnings('ignore')
 
 def get_season_player(df,player_name, season):
     return df[(df.id.str.contains(season)) & df.player_name.str.contains(player_name)]
 
+def get_player(df,player_name):
+    return df[df.player_name.str.contains(player_name)]
+
+
 def get_season(df,season):
     return df[df.id.str.contains(season)]
+
+def get_players_position(df, pos):
+    return df[df[pos] == 1]
 
 def radar_chart(radar_df,dico_players, title):
     fig = go.Figure()
