@@ -6,7 +6,7 @@ Group U :
 - BAKEBECK Samuel
 - JAIT Fatima-Ezzahra
 
-## Repository Struce
+## Repository Structure
 
 * Notebooks and Code : All the Jupyter Notebooks and Python program used to retrieve, explore data and creating the charts
 * Website : Code and Resource used to create the Web dashboard
